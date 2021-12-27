@@ -1,8 +1,23 @@
 # moduDeep_pytorch with Docker🐳
 
-- PyTorch
+- PyTorch 1.10.1
+  - ![image](https://user-images.githubusercontent.com/72531381/147450783-5c5cd01d-328e-4fec-ba4d-a0cb2b10963b.jpg)
+  
+  - visual studio code 에서 사용하려고,
+  ```
+   ctrl + shift + p 해서 select interpreter 를 열어
+   Python 3.9.7 64-bit ('base': conda) 를 선택하였다.
+  ```
+- conda 4.11.0
 
-- 목차(Part 1 ~ Part 3 / Part 4는 하지 않음)
+- cudatoolkit 11.3.1
+![image](https://user-images.githubusercontent.com/72531381/147450745-123915bd-4712-4d6b-b22f-cd89fd2ac434.jpg)
+
+
+---
+---
+
+## 목차(Part 1 ~ Part 3 / Part 4는 하지 않음)
   - PART 1: Machine Learning & PyTorch Basic
     - Lab-01-1 Tensor Manipulation 1
     - Lab-01-2 Tensor Manipulation 2
@@ -41,8 +56,23 @@
     - Lab-11-5 RNN seq2seq
     - Lab-11-6 PackedSequence
 ---
----
 
 ## Dokcer 🐳 란,
 
 - 컨테이너 기반의 가상화 시스템.
+- 다양한 프로그램, 실행환경을 컨테이너로 추상화하고 동일한 인터페이스를 제공하여 
+프로그램의 배포 및 관리를 단순하게 해줍니다. 백엔드 프로그램, 데이터베이스 서버, 메시지 큐등 
+어떤 프로그램도 컨테이너로 추상화할 수 있고 조립PC, AWS, Azure, Google cloud등 어디에서든 실행할 수 있다.
+
+## Lab-01-1 Tensor Manipulation 1️⃣
+
+- Vector, Matrix and Tensor
+  - 1차원 : Vector
+  - 2차원 : Matrix
+  - 3차원 : Tensor
+  - 4,5,6차원
+  ![image](https://user-images.githubusercontent.com/72531381/147435475-b85f293e-204e-4f94-a0cf-400918778a8d.jpg)
+- Numpy Review
+- PyTorch Tensor Allocation
+- Matrix Multiplication
+- Other Basic Ops
