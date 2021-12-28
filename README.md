@@ -76,3 +76,13 @@
 - PyTorch Tensor Allocation
 - Matrix Multiplication
 - Other Basic Ops
+
+
+---
+---
+# Ubuntu 18.04.06 LTS
+
+- 토 나오는 설치과정..
+- 무선,유선 연결되지 않은 상태에서 우분투를 설치하니.. 랜드라이버와 인터넷 드라이버가 잡히지 않으며.. 이것을 수동으로 설치하려고 하니 make 명령어도 깔려있지 않아 죽을 맛이다.
+- apt-get install gcc make 을 수동으로 설치할 수 있어야 한다.
+- 정 안되면, PC방가서 깔아와야겠다.
