@@ -80,7 +80,7 @@
 
 ---
 ---
-# Ubuntu 18.04.06 LTS
+# Ubuntu 18.04.5 LTS
 
 
 - 토 나오는 설치과정..
@@ -94,3 +94,8 @@
 ![image](https://user-images.githubusercontent.com/72531381/147816097-d1e9abe6-2ce5-497a-ab77-9e56dae5feca.jpg)
 
 - 꼭 해결하고 만다.
+
+- 와!!!!!!!!!!!! 
+- 해결방법은 usb 랜포트를 사용하니 갑자기 랜을 잡았다!!
+- 이제 cuda 10.02 cudnn 7.6.5
+- intel corporation device 15fa 용 리눅스 드라이버 설치를 완료하였다!!
