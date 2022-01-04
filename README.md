@@ -80,7 +80,7 @@
 
 ---
 ---
-# Ubuntu 18.04.5 LTS
+## Ubuntu 18.04.5 LTS
 
 
 - 토 나오는 설치과정..
@@ -99,3 +99,12 @@
 - 해결방법은 usb 랜포트를 사용하니 갑자기 랜을 잡았다!!
 - 이제 cuda 10.02 cudnn 7.6.5
 - intel corporation device 15fa 용 리눅스 드라이버 설치를 완료하였다!!
+
+---
+## Memo
+
+- ### numpy
+  - numpy의 class ndarray
+  - ndarray.ndim : 배열의 차원 수 or 배열의 축 수
+  - ndarray.shape : 배열 각 차원의 크기를 튜플 형태로 표현.
+  - ndarray.dtype : 원소의 종류, 기본적으로 넘파이의 원소들은 모두 같은 데이터 타입
