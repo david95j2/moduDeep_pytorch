@@ -5,13 +5,15 @@
   
   - visual studio code 에서 사용하려고,
   ```
-   ctrl + shift + p 해서 select interpreter 를 열어
-   Python 3.9.7 64-bit ('base': conda) 를 선택하였다.
+   - ctrl + shift + p 해서 select interpreter 를 열어
+   - Python 3.9.7 64-bit ('base': conda) 를 선택하였다. 
   ```
 - conda 4.11.0
 
 - cudatoolkit 10.2
 ![image](https://user-images.githubusercontent.com/72531381/148143486-e737860d-d6b3-4fe7-bc62-5c042796ef59.jpeg)
+
+
 
 ---
 ---
