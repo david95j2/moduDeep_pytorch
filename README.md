@@ -1,7 +1,7 @@
 # moduDeep_pytorch with Docker🐳
 
 - PyTorch 1.10.1
-  - ![image](https://user-images.githubusercontent.com/72531381/147450783-5c5cd01d-328e-4fec-ba4d-a0cb2b10963b.jpg)
+  - ![image](https://user-images.githubusercontent.com/72531381/148143832-2612c922-c05d-4dca-810b-c5e265d5820b.jpeg)
   
   - visual studio code 에서 사용하려고,
   ```
@@ -10,9 +10,8 @@
   ```
 - conda 4.11.0
 
-- cudatoolkit 11.3.1
-![image](https://user-images.githubusercontent.com/72531381/147450745-123915bd-4712-4d6b-b22f-cd89fd2ac434.jpg)
-
+- cudatoolkit 10.2
+![image](https://user-images.githubusercontent.com/72531381/148143486-e737860d-d6b3-4fe7-bc62-5c042796ef59.jpeg)
 
 ---
 ---
