@@ -109,3 +109,46 @@
   - ndarray.ndim : 배열의 차원 수 or 배열의 축 수
   - ndarray.shape : 배열 각 차원의 크기를 튜플 형태로 표현.
   - ndarray.dtype : 원소의 종류, 기본적으로 넘파이의 원소들은 모두 같은 데이터 타입
+  - Ellipsis Slicing (Array Slicing - Three dot):
+    - [ : ], [ 1 , : ] 과 같이 : 콜론 표현은 '해당 차원의 모든 원소'를 의미한다.
+    - Ellipsis Slicing 또한 : 콜론과 같은 것을 의미하는데 다차원에 대해 여러개의 : 콜론을 사용하는 것을 ... 하나로 생략할 수 있다.
+    - 예를들어 a[:,2:]가 모든 열에 대해 2번째 행부터 마지막 행까지 Slice한다면 이것은 a[...,2:] 라고 쓸 수 있다.
+    ```python
+    >>> a[...]
+    array([[1, 2, 3],
+          [2, 3, 4],
+          [3, 4, 5]])
+    >>> a[1:, ...]
+    array([[2, 3, 4],
+          [3, 4, 5]])
+    >>> a[1:, ...]
+    array([2, 3])
+    ```
+
+- ### Tensor
+  - 데이터 생성
+  ```python
+  # 직접 생성
+  data = [[1,2],[3,4]] # List
+  x_data = torch.tensor(data) # Matrix == 2D tensor
+
+  # numpy 배열로부터 생성
+  np_arr = np.array(data) # 2차 배열
+  x_np = torch.from_numpy(np_array) # Matrix == 2D tensor
+
+  # 다른 텐서로부터 생성
+  x_ones = torch.ones_like(x_data)
+  print(f"Ones Tensor: \n {x_ones} \n")
+
+  # 무작위(random) 또는 상수(Constant) 값을 사용하기
+  shape = (2,3,)
+  print(len(shape))
+  print(type(shape))
+  rand_tensor = torch.rand(shape)
+  ones_tensor = torch.ones(shape)
+  zeros_tensor = torch.zeros(shape)
+
+  print(f"Random Tensor: \n {rand_tensor} \n")
+  print(f"Ones Tensor: \n {ones_tensor} \n")
+  print(f"Zeros Tensor: \n {zeros_tensor}")
+  ```
