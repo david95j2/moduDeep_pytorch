@@ -5,9 +5,11 @@
   
   - visual studio code 에서 사용하려고,
   ```
-   - ctrl + shift + p 해서 select interpreter 를 열어
-   - Python 3.9.7 64-bit ('base': conda) 를 선택하였다. 
+   Python 2.7.17이 깔려있고 torch가 3.7 이상 3.9 이하 사이의 버전과 호환되기 때문에
+   ctrl + shift + p 로 select interpreter 를 열어
+   Python 3.9.7 64-bit ('base': conda) 를 선택하였다. 
   ```
+- torchvision 0.11.2  
 - conda 4.11.0
 
 - cudatoolkit 10.2
