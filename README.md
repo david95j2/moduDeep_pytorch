@@ -105,6 +105,7 @@
 
 ---
 ## Memo
+- ### torch.nn
 
 - ### numpy
   - numpy의 class ndarray
