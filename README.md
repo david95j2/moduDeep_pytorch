@@ -154,3 +154,14 @@
   print(f"Ones Tensor: \n {ones_tensor} \n")
   print(f"Zeros Tensor: \n {zeros_tensor}")
   ```
+
+- ### CNN
+  1. Convolution(합성곱)
+  2. 채널(Channel)
+  3. 필터(Filter)
+  4. 커널(Kernel)
+  5. 스트라이드(Strid)
+  6. 패딩(Padding)
+  7. 피처 맵(Feature Map)
+  8. 액티베이션 맵(Activation Map)
+  9. 풀링(Pooling) 레이어
