@@ -105,6 +105,12 @@
 
 ---
 ## Memo
+- ### torch.nn
+- PyTorch는 랜덤 또는 0으로만 이루어진 텐서를 생성하는 메서드를 제공하고, 
+- 우리는 간단한 선형 모델의 가중치(weights)와 절편(bias)을 생성하기 위해서 이것을 사용할 것이다.
+- 이들은 일반적인 텐서에 매우 특별한 한 가지가 추가된 것이다.
+- PyTorch에게 이들이 기울기(gradient)가 필요하다고 알려준다.
+- 이를 통해 PyTorch는 텐서에 행해지는 모든 연산을 기록하게 하고, 따라서 자동적으로 역전파(back-propagation) 동안에 기울기를 계산할 수 있다.
 
 - ### numpy
   - numpy의 class ndarray
@@ -154,6 +160,7 @@
   print(f"Ones Tensor: \n {ones_tensor} \n")
   print(f"Zeros Tensor: \n {zeros_tensor}")
   ```
+<<<<<<< HEAD
 
 - ### CNN
   1. Convolution(합성곱)
@@ -165,3 +172,5 @@
   7. 피처 맵(Feature Map)
   8. 액티베이션 맵(Activation Map)
   9. 풀링(Pooling) 레이어
+=======
+>>>>>>> 26ff45c4d690e5ec45baf2bad06578f07015e033
