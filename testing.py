@@ -34,14 +34,9 @@ torch.cuda.device(0)
 
 # load dataset
 train_ds = torchvision.datasets.ImageFolder(
-    root="pytorch/Lab_05_(feedback_activation)/baby_data/train", transform=transforms.ToTensor())
+    root="pytorch/Lab_05_(inception)/baby_data/train", transform=transforms.ToTensor())
 val_ds = torchvision.datasets.ImageFolder(
-    root="pytorch/Lab_05_(feedback_activation)/baby_data/val", transform=transforms.ToTensor())
-
-
-print(len(train_ds))
-print(len(val_ds))
-
+    root="pytorch/Lab_05_(inception)/baby_data/val", transform=transforms.ToTensor())
 
 # To normalize the dataset, calculate the mean and std
 train_meanRGB = [np.mean(x.numpy(), axis=(1, 2)) for x, _ in train_ds]
@@ -73,15 +68,15 @@ print(val_meanR, val_meanG, val_meanB)
 # define the image transformation
 train_transformation = transforms.Compose([
     transforms.ToTensor(),
-    transforms.Resize(224),
+    # transforms.Resize(224),
     transforms.Normalize([train_meanR, train_meanG, train_meanB], [
                          train_stdR, train_stdG, train_stdB]),
-    transforms.RandomHorizontalFlip(),
+    # transforms.RandomHorizontalFlip(),
 ])
 
 val_transformation = transforms.Compose([
     transforms.ToTensor(),
-    transforms.Resize(224),
+    # transforms.Resize(224),
     transforms.Normalize([train_meanR, train_meanG, train_meanB], [
                          train_stdR, train_stdG, train_stdB]),
 ])
@@ -169,36 +164,54 @@ class GoogLeNet(nn.Module):
             self._initialize_weights()
 
     def forward(self, x):
+        print(f"맨 처음 X!!!!!! x.shape() : {x.shape}")
         x = self.conv1(x)
+        print(f"Conv1 x.shape() : {x.shape}")
         x = self.maxpool1(x)
+        print(f"MaxP1 x.shape() : {x.shape}")
         x = self.conv2(x)
+        print(f"ConV2 x.shape() : {x.shape}")
         x = self.maxpool2(x)
+        print(f"MaxP2 x.shape() : {x.shape}")
         x = self.inception3a(x)
+        print(f"Incep3_A x.shape() : {x.shape}")
         x = self.inception3b(x)
+        print(f"Incep3_B x.shape() : {x.shape}")
         x = self.maxpool3(x)
+        print(f"Maxp3 x.shape() : {x.shape}")
         x = self.inception4a(x)
+        print(f"Incep4_A x.shape() : {x.shape}")
 
         if self.aux_logits and self.training:
             aux1 = self.aux1(x)
 
         x = self.inception4b(x)
+        print(f"Incep4_B x.shape() : {x.shape}")
         x = self.inception4c(x)
+        print(f"Incep4_C x.shape() : {x.shape}")
         x = self.inception4d(x)
+        print(f"Incep4_D x.shape() : {x.shape}")
 
         if self.aux_logits and self.training:
             aux2 = self.aux2(x)
 
         x = self.inception4e(x)
+        print(f"Incep4_E x.shape() : {x.shape}")
         x = self.maxpool4(x)
+        print(f"MaxP4 x.shape() : {x.shape}")
         x = self.inception5a(x)
+        print(f"Incep5_A x.shape() : {x.shape}")
         x = self.inception5b(x)
+        print(f"Incep5_B x.shape() : {x.shape}")
         x = self.avgpool(x)
+        print(f"AverP x.shape() : {x.shape}")
 
         x = x.view(x.shape[0], -1)
-
+        print(f"View x.shape() : {x.shape}")
         x = self.dropout(x)
-        print(f"this is a X : {x}")
+        print(f"DropOut x.shape() : {x.shape}")
         x = self.fc1(x)
+        print(f"Fc1 x.shape() : {x.shape}")
 
         if self.aux_logits and self.training:
             return x, aux1, aux2
@@ -293,12 +306,12 @@ class InceptionAux(nn.Module):
 device = torch.device('cuda' if torch.cuda.is_available() else 'cpu')
 print(device)
 
-model = GoogLeNet(aux_logits=True, num_classes=10,
+model = GoogLeNet(aux_logits=True, num_classes=2,
                   init_weights=True).to(device)
 print(model)
 
 
-x = torch.randn(3, 3, 224, 224).to(device)
+x = torch.randn(3, 3, 499, 145).to(device)
 output = model(x)
 print(output)
 
