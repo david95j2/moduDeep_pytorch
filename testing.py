@@ -120,7 +120,7 @@ show(x_grid, y_grid)
 
 class GoogLeNet(nn.Module):
     def __init__(self, aux_logits=True, num_classes=10, init_weights=True):
-        super(GoogLeNet, self).__init__()
+        super().__init__()
         assert aux_logits == True or aux_logits == False
         self.aux_logits = aux_logits
 
