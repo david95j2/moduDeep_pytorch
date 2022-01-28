@@ -19,6 +19,8 @@
 
 ---
 resnet 까지 완료!!!!
+batch normalization 읽기!
+fast R cnn 도전!
 ---
 
 ## 목차(Part 1 ~ Part 3 / Part 4는 하지 않음)
