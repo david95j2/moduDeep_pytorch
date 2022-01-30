@@ -21,7 +21,7 @@
 resnet 까지 완료!!!!
 batch normalization 읽기!
 fast R cnn 도전!
-mobileNet ShuffleNet
+mobileNet ShuffleNet : 초경량 모델
 ---
 
 ## 목차(Part 1 ~ Part 3 / Part 4는 하지 않음)
