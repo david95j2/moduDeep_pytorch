@@ -22,6 +22,10 @@ resnet 까지 완료!!!!
 batch normalization 읽기!
 fast R cnn 도전!
 mobileNet ShuffleNet : 초경량 모델
+
+ - 핸드폰이나 임베디드 시스템 같이 저용량 메모리환경에 딥러닝을 적용하기 위해서는 모델 경량화가 필요하다.
+ - 메모리가 제한된 환경에서 MobileNet 을 최적으로 
+
 ---
 
 ## 목차(Part 1 ~ Part 3 / Part 4는 하지 않음)
