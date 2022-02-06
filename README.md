@@ -30,6 +30,7 @@ mobileNet ShuffleNet : 초경량 모델
  - 그리고 AlexNet과 비교하여 동일한 정확도로 13배나 더 빠르다. 
  NasNet & EfficentNet
 경량화에 대한 다양한 기법들
+object detection
 ---
 
 ## 목차(Part 1 ~ Part 3 / Part 4는 하지 않음)
