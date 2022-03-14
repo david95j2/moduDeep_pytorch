@@ -114,6 +114,7 @@ object detection(+transformer 기법까지)
 - 와!!!!!!!!!!!! 
 - 해결방법은 usb 랜포트를 사용하니 갑자기 랜을 잡았다!!
 - 이제 cuda 10.02 cudnn 7.6.5
+- lan 카드 32gb
 - intel corporation device 15fa 용 리눅스 드라이버 설치를 완료하였다!!
 
 ---
