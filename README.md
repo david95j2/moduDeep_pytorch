@@ -18,6 +18,7 @@
 - python3 -m venv ./name
 
 ---
+yolov3
 resnet 까지 완료!!!!
 batch normalization 읽기!
 fast R cnn 도전!
