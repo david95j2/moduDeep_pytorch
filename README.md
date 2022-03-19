@@ -19,6 +19,7 @@
 
 ---
 yolov3
+v1,v2 는 review
 resnet 까지 완료!!!!
 batch normalization 읽기!
 fast R cnn 도전!
