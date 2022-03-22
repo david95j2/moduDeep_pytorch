@@ -18,7 +18,7 @@
 - python3 -m venv ./name
 
 ---
-yolov3 일단은 얘도 review
+yolov3 일단은 얘도 review + open source
 v1,v2 는 review
 resnet 까지 완료!!!!
 batch normalization 읽기!
